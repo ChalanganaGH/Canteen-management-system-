@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Management System - Backend</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .status { color: #10b981; font-weight: bold; }
+        .subtitle { color: #666; margin-bottom: 30px; }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .section h2 {
+            color: #4f46e5;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        .endpoint {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px;
+            background: white;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border-left: 4px solid #4f46e5;
+        }
+        .endpoint-url {
+            font-family: 'Courier New', monospace;
+            color: #333;
+            font-size: 0.9rem;
+        }
+        .test-btn {
+            padding: 6px 12px;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .test-btn:hover { background: #4338ca; }
+        .info {
+            background: #dbeafe;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 4px solid #3b82f6;
+            margin-top: 20px;
+        }
+        .info strong { color: #1e40af; }
+        .frontend-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #10b981;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .frontend-link:hover { background: #059669; }
+        .icon { font-size: 1.5rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="icon">🍽️</span> Canteen Management System</h1>
+        <p class="subtitle">Backend API Server <span class="status">● RUNNING</span></p>
+
+        <div class="section">
+            <h2>📡 API Endpoints</h2>
+            
+            <div class="endpoint">
+                <span class="endpoint-url">GET /api/menu.php</span>
+                <a href="/canteen-management-system/api/menu.php" class="test-btn" target="_blank">Test</a>
+            </div>
+
+            <div class="endpoint">
+                <span class="endpoint-url">GET /api/orders.php</span>
+                <a href="/canteen-management-system/api/orders.php" class="test-btn" target="_blank">Test</a>
+            </div>
+
+            <div class="endpoint">
+                <span class="endpoint-url">POST /api/auth.php</span>
+                <span style="color: #666; font-size: 0.85rem;">Login/Register</span>
+            </div>
+
+            <div class="endpoint">
+                <span class="endpoint-url">POST /api/upload.php</span>
+                <span style="color: #666; font-size: 0.85rem;">Image Upload</span>
+            </div>
+
+            <div class="endpoint">
+                <span class="endpoint-url">GET /api/queue.php</span>
+                <a href="/canteen-management-system/api/queue.php" class="test-btn" target="_blank">Test</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Quick Access</h2>
+            <p style="margin-bottom: 15px; color: #666;">Frontend is running separately on Vite dev server:</p>
+            <a href="http://localhost:5174" class="frontend-link">Open Frontend →</a>
+        </div>
+
+        <div class="info">
+            <strong>ℹ️ Note:</strong> This is the backend API server. To use the application, access the frontend at 
+            <strong>http://localhost:5174</strong> (or the port shown in your terminal).
+        </div>
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 2px solid #e5e7eb; text-align: center; color: #666;">
+            <p><strong>Default Credentials:</strong></p>
+            <p style="margin-top: 8px;">
+                Student: <code>john@university.edu</code> / <code>password123</code><br>
+                Admin: <code>admin</code> / <code>admin123</code>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

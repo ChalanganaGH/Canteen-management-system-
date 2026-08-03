@@ -1,0 +1,44 @@
+:root {
+    /* Black, White, Yellow Palette */
+    --primary: #000000;
+    /* Black */
+    --primary-hover: #333333;
+    /* Dark Gray */
+    --secondary: #FFD700;
+    /* Gold/Yellow */
+    --secondary-hover: #E6C200;
+
+    --accent: #FFD700;
+    /* Yellow */
+    --success: #10b981;
+    --warning: #f59e0b;
+
+    /* Backgrounds */
+    --bg-body: #FFFFFF;
+    --bg-card: #FFFFFF;
+    --bg-glass: rgba(255, 255, 255, 0.95);
+
+    /* Text */
+    --text-main: #000000;
+    --text-secondary: #444444;
+    --text-muted: #888888;
+    --text-light: #FFFFFF;
+
+    /* Borders & Effects */
+    --border-color: #E5E5E5;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    --shadow-glow: 0 0 15px rgba(255, 215, 0, 0.5);
+    /* Yellow Glow */
+
+    /* Fonts */
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Outfit', sans-serif;
+}
