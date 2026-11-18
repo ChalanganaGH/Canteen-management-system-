@@ -43,7 +43,11 @@ try {
     }
 
     // Generate unique filename
-    $extension = pathinfo($file['name'], PATHINFO_EXTENSION);
+    $allowedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
+    $extension = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
+    if (!in_array($extension, $allowedExtensions)) {
+        throw new Exception('Invalid file extension. Only JPG, PNG, GIF, and WebP are allowed');
+    }
     $filename = uniqid('food_', true) . '.' . $extension;
     
     // Set upload directory
